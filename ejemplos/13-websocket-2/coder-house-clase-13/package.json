@@ -1,0 +1,32 @@
+{
+  "name": "desafio-websocket-02",
+  "version": "1.0.0",
+  "description": "Desafío websocket para la clase 13 de desarrollador backend.",
+  "main": "server.js",
+  "scripts": {
+    "test": "node server.js",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Javier2280/coder-house-clase-13.git"
+  },
+  "keywords": [
+    "websocket",
+    "chat",
+    "productos",
+    "mensajes"
+  ],
+  "author": "Javier Cabaña",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Javier2280/coder-house-clase-13/issues"
+  },
+  "homepage": "https://github.com/Javier2280/coder-house-clase-13#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-handlebars": "^5.3.2",
+    "socket.io": "^4.1.2"
+  },
+  "devDependencies": {}
+}

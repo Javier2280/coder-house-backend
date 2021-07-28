@@ -7,3 +7,25 @@
  * 
  */
 const fs = require('fs');
+
+fs.readFile('./package.json', (error, contenido) => {
+    if (error) {
+        console.log('error:', error);
+    } else {
+        let info = {
+            contenidoStr: contenido.toString(),
+            contenidoObj: JSON.parse(contenido),
+            size: contenido.length,
+        };
+
+        console.log(info);
+
+        fs.writeFile('./info.txt', JSON.stringify(info, null, '\t'), (error) => {
+            if (error) {
+                throw new Error('Error al escriie archivo')
+            } else {
+                console.log('Archivo creado exitosamente')
+            }
+        })
+    }
+})

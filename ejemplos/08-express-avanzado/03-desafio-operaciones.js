@@ -18,6 +18,12 @@ app.get('/', (req, res) => {
 // GET /sumar/5/6
 app.get('/api/sumar/:num1/:num2', (req, res) => {
 
+    try {
+        let resultado = Number(req.params.num1) + Number(req.params.num2);
+        res.send(`Resultado: ${resultado}`);
+    } catch (error) {
+        res.status(400).send('Error:', error.message);
+    }
 });
 
 // GET /sumar?num1=5&num2=62

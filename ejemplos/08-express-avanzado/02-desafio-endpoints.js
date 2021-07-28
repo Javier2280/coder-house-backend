@@ -15,15 +15,35 @@
  });
  
  app.get('/api/getFrase', (req, res) => {
-     
+     try {
+         res.send(frase);
+     } catch (error) {
+         res.status(400).send(error);
+     }
  });
  
  app.get('/api/getLetra/:num', (req, res) => {
-     
+     let letras = frase.split('');
+
+     try {
+         if(letras.length < req.params.num) {
+            res.status(400).send('el número excede la cantidad de letras!');
+         } else {
+            res.send(letras[req.params.num - 1]);
+         }
+     } catch (error) {
+        res.status(400).send(error);
+     }
  });
  
  app.get('/api/getPalabra/:num', (req, res) => {
-     
+    let palabras = frase.split(' ');
+
+    try {
+        res.send(palabras[req.params.num - 1]);
+    } catch (error) {
+       res.status(400).send(error);
+    }
  });
  
  // pongo a escuchar el servidor en el puerto indicado

@@ -1,13 +1,13 @@
 {
-  "name": "entregable",
+  "name": "desafio-08-express",
   "version": "1.0.0",
-  "description": "",
+  "description": "Desafío entregable 08 (Express avanzado) para el curso de desarrollador backend.",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
   },
-  "author": "",
+  "author": "Javier Cabaña",
   "license": "ISC",
   "dependencies": {
     "express": "^4.17.1"

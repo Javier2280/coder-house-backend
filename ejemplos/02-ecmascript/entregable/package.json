@@ -1,15 +1,16 @@
 {
-    "name": "entregable",
-    "version": "1.0.0",
-    "description": "",
-    "main": "index.js",
-    "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1"
-    },
-    "keywords": [],
-    "author": "",
-    "license": "ISC",
-    "devDependencies": {
-        "typescript": "^4.0.5"
-    }
+  "name": "desafio02-typescript",
+  "version": "1.0.1",
+  "description": "Trabajo práctico entregable de la calse 03 del curso de Programador Backend",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Javier Cabaña",
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^4.2.4"
+  },
+  "dependencies": {}
 }

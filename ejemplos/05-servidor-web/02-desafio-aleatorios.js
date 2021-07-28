@@ -15,3 +15,9 @@ function obtenerRandom(min, max) {
 
 // completar el codigo...
 
+for(var i=0; i<10000; i++){
+    let numero = obtenerRandom(1,21);
+    valores[numero] = (valores[numero] || 1) + 1;
+}
+
+console.log(valores);
